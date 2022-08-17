@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
 a {
     text-decoration: none;
 }
@@ -17,12 +26,35 @@ p {
     font-size: 16px;
 }
 
+/* Button */
+.button {
+    font-size: 12px;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    border-radius: 8px;
+    padding: 10px 24px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
 /* Header */
 .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    height: 250px;
     background-image: linear-gradient(120deg, #4abea0, teal);
-    padding: 75px 0 75px 0;
     color: #fff;
+}
+
+header h1 {
+    color: white;
 }
 
 /* Main */
@@ -31,10 +63,6 @@ main {
     padding: 2rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem;
-    color: black;
-}
-
-main h1, main h2, main h3, main h4, main h5, main h6 {
     color: black;
 }
 
@@ -51,9 +79,12 @@ main blockquote {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: sticky;
+    top: 0;
     padding: 20px;
     background-color: teal;
     color: #fff;
+    z-index: 15;
 }
 
 .nav-links a {
@@ -67,12 +98,18 @@ main blockquote {
 }
 
 /* LOGO */
-.logo {
+.logo-text {
     font-size: 32px;
     white-space: nowrap;
+    color: white;
+    text-align: center;
 }
 
-.logo-photo {
+.logo-text h6 {
+    color: white;
+}
+
+.logo-img {
     height: 100px;
     width: 100px;
     margin: 3px 3px 0 10px;
@@ -153,6 +190,14 @@ input[type=checkbox]{
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 890px) {
+    html {
+        scroll-padding-top: 15rem;
+    }
+
+    main {
+        padding: 1rem 3rem;
+    }
+
     .menu {
         display:none;
         position: absolute;
@@ -192,12 +237,105 @@ input[type=checkbox]{
     }
 }
 
+/* Profile */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture {
+    display: block;
+    margin-bottom: 1rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+section .border {
+    border: 3px solid black;
+}
+
+/* Profile links */
+.profile-links ul{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10%;
+    padding-left: 0;
+    z-index: 10;
+}
+
+.profile-links ul li{
+    list-style: none;
+    margin: 0.5rem 0.5rem;
+    display: inline-block;
+}
+
+.profile-links ul li .fab{
+    font-size: 2em;
+    line-height: 60px;
+    transition: 0.3s;
+    color: #000;
+}
+
+.profile-links ul li .fab:hover{
+    color: #fff;
+}
+
+.profile-links ul li a{
+    left: 100%;
+    display: block;
+    width: 4rem;
+    border-radius: 50%;
+    background-color:papayawhip;
+    justify-content: center;
+    text-align: center;
+    transition: 0.6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.profile-links ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.profile-links ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.profile-links ul li:nth-child(2) a:hover{
+    background-color: #0077b5;
+}
+
 /* Footer */
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: teal;
-    height: 100px;
+    height: 175px;
     color: white;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-img {
+    height: 50px;
+    width: 50px;
+}
+
+.back-to-top-link {
+    position: fixed;
+    bottom: 3.5rem;
+    right: 3rem;
+    z-index: 15;
+    display: none;
 }
