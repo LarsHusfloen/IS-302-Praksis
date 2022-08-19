@@ -26,6 +26,15 @@ p {
     font-size: 16px;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
 /* Button */
 .button {
     font-size: 12px;
@@ -235,9 +244,27 @@ input[type=checkbox]{
     .dropdown li:hover {
         background-color: #4c9e9e;
     }
+
+    .profiles {
+        flex-direction: column !important;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .page-header {
+        height: 175px !important;
+    }
 }
 
 /* Profile */
+.profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .profile {
     display: flex;
     flex-direction: column;
