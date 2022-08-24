@@ -269,7 +269,6 @@ input[type=checkbox]{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .profile-picture {
@@ -280,6 +279,10 @@ input[type=checkbox]{
     border-radius: 50%;
     object-fit: cover;
     margin-top: 20px;
+}
+
+.profile p {
+    max-width: 300px;
 }
 
 section .border {
