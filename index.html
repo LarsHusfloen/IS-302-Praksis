@@ -18,6 +18,32 @@
 <nav class="navbar">
     <!-- LOGO -->
     <img alt="Beehive" class="logo-img" src="images/beehive.png" title="Beehive"/>
+    <div class="logo-text">
+        <h6>BEEHIVE PROJECT AS</h6>
+        <p>Velferdsteknologi i barnehagene</p>
+    </div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+        <!-- CHECKBOX HACK -->
+        <input id="checkbox_toggle" type="checkbox"/>
+        <label class="hamburger" for="checkbox_toggle">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+            <li><a href="#start">Home</a></li>
+            <li><a href="#prosjekt">Prosjekt</a></li>
+            <li><a href="#partner">Partnere</a></li>
+            <li><a href="#profile">Om oss</a></li>
+            <li class="status">
+                Status
+                <!-- DROPDOWN MENU -->
+                <ul class="dropdown">
+                    <li><a href="#status1">Status 1</a></li>
+                    <li><a href="#status2">Status 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#refleksjon">Avsluttende refleksjon</a></li>
+        </div>
+    </ul>
     <div class="navbar-inner">
         <div class="logo-text">
             <h6>BEEHIVE PROJECT AS</h6>
@@ -94,22 +120,43 @@
     <br><br>
 
     <section id="profile">
-        <div class="profile border">
+        <div class="border text-center">
             <br>
-            <h2><u>Om meg</u></h2>
-            <img class="profile-picture" src="images/profilbilde.jpg" alt="Profilbilde" title="Profilbilde">
-            <h3>Lars Blåsmo Husfloen</h3>
-            <div class="profile-links">
-                <ul>
-                    <li><a href="https://github.com/LarsHusfloen" target="_blank"><em class="fab fa-github"></em></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/lars-bl%C3%A5smo-husfloen-798700208/" target="_blank"><em
-                            class="fab fa-linkedin-in"></em></a></li>
-                </ul>
-            </div>
-            <p>
+            <h2><u>Om oss</u></h2>
+            <div class="row profiles">
+                <div class="profile">
+                    <img class="profile-picture" src="images/profilbilde.jpg" alt="Profilbilde" title="Profilbilde">
+                    <h3>Lars Blåsmo Husfloen</h3>
+                    <div class="profile-links">
+                        <ul>
+                            <li><a href="https://github.com/LarsHusfloen" target="_blank"><em class="fab fa-github"></em></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/lars-bl%C3%A5smo-husfloen-798700208/" target="_blank"><em
+                                    class="fab fa-linkedin-in"></em></a></li>
+                        </ul>
+                    </div>
+                    <p>
 
-            </p>
+                    </p>
+                </div>
+                <div class="profile">
+                    <img class="profile-picture" src="images/marius.jpg" alt="Profilbilde" title="Profilbilde">
+                    <h3>Marius Sørensen Bakken</h3>
+                    <div class="profile-links">
+                        <ul>
+                            <li><a href="" target="#"><em class="fab fa-github"></em></a>
+                            </li>
+                            <li><a href="" target="#"><em
+                                    class="fab fa-linkedin-in"></em></a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        Navnet mitt er Marius Sørensen Bakken og jeg er en 26 år gammel student på Universitetet i Agder.
+                        <br><br>
+                        Jeg søkte praksis hos TietoEVRY fordi prosjektbeskrivelsen så ut som en virkelig god mulighet til å få ekte arbeidserfaring innen konsulentyrket.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
