@@ -18,7 +18,7 @@ a {
     text-decoration: none;
 }
 
-li {
+.menu li {
     list-style: none;
 }
 
@@ -362,6 +362,12 @@ section .border {
 }
 .profile-links ul li:nth-child(2) a:hover{
     background-color: #0077b5;
+}
+
+/* Status */
+
+.status-list{
+    margin-left: 20px;
 }
 
 /* Footer */
