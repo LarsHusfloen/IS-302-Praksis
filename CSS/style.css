@@ -145,6 +145,25 @@ main blockquote {
     padding: 5px 14px;
 }
 
+/* Menu vår praksis */
+.menu-vår {
+    display: flex;
+    font-size: 18px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.menu-vår li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu-vår li {
+    padding: 5px 14px;
+    list-style: none;
+}
+
 @media (max-width: 450px) {
     .menu {
         margin-top: 0 !important;
