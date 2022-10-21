@@ -73,6 +73,7 @@ a {
     height: 250px;
     background-image: linear-gradient(120deg, #4abea0, teal);
     color: #fff;
+    padding-bottom: 20px;
 }
 
 header h1 {
@@ -135,8 +136,17 @@ main blockquote {
 
 .logo-img {
     height: 150px;
-    width: 150px;
-    margin: 15px 3px;
+    margin: 25px 25px;
+    vertical-align: middle;
+}
+
+    .logo-img:first-child {
+        height: 70px;
+        vertical-align: middle;
+    }
+
+.logos {
+    flex-direction: row;
 }
 
 /* NAVBAR MENU */
@@ -194,11 +204,15 @@ main blockquote {
         height: 225px;
     }
     .logo-img {
-        height: 75px !important;
-        width: 75px !important;
+        height: 75px ;
+        width: 75px ;
         margin-top: 5px !important;
         margin-bottom: 5px !important;
     }
+        .logo-img:first-child {
+            width:100px !important;
+            vertical-align: middle;
+        }
 }
 
 /* DROPDOWN MENU */
@@ -307,9 +321,11 @@ input[type=checkbox]{
     }
     .logo-img {
         height: 100px;
-        width: 100px;
-        margin: 10px 3px;
 
+    }
+    .logo-img:first-child {
+        height: 40px;
+        vertical-align: middle;
     }
 }
 
@@ -346,21 +362,22 @@ input[type=checkbox]{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    transition: transform .2s;
 }
 
-.praksis-picture:hover {
-    width: 500px;
-    height: 500px;
-    transition-duration: 500ms;
-    box-shadow: 5px 5px 40px 10px rgba(58, 58, 58, 0.2);
-}
+    .praksis-picture:hover {
+        transform: scale(1.2);
+        transition-duration: 500ms;
+        box-shadow: 5px 5px 40px 10px rgba(58, 58, 58, 0.2);
+    }
 
 .profile p {
     max-width: 300px;
 }
 
 section .border {
-    border: 3px solid black;
+    border: 3px solid rgb(73, 73, 73);
+    border-radius: 15px;
 }
 
 /* Profile links */
