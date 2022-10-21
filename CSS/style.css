@@ -136,6 +136,7 @@ main blockquote {
 
 .logo-img {
     height: 150px;
+    width: auto;
     margin: 25px 25px;
     vertical-align: middle;
 }
